@@ -1,0 +1,24 @@
+.highlights {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.highlight-card {
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--brand-primary) 6%, white);
+}
+
+h3 {
+  margin-top: 0;
+  font-family: var(--font-display);
+}
+
+@media (max-width: 900px) {
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}

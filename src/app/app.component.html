@@ -1,0 +1,43 @@
+<div
+  class="site"
+  [style.--brand-primary]="config.branding.colors.primary"
+  [style.--brand-secondary]="config.branding.colors.secondary"
+>
+  <app-topbar
+    [logo]="config.branding.logo"
+    [logoAlt]="config.branding.logoAlt"
+    [businessName]="config.business.name"
+    [navigation]="config.navigation"
+  />
+
+  <main>
+    <app-hero-section
+      [tagline]="config.business.tagline"
+      [heroTitle]="config.business.heroTitle"
+      [heroDescription]="config.business.heroDescription"
+      [ctaPrimaryLabel]="config.business.ctaPrimary.label"
+      [ctaPrimaryHref]="config.business.ctaPrimary.href"
+      [ctaSecondaryLabel]="config.business.ctaSecondary.label"
+      [ctaSecondaryHref]="config.business.ctaSecondary.href"
+    />
+
+    <app-carousel-section [photos]="config.media.carouselPhotos" />
+
+    <app-who-are-we-section
+      [bannerSrc]="config.media.whoAreWeBanner.src"
+      [bannerAlt]="config.media.whoAreWeBanner.alt"
+      [text]="config.business.whoAreWe"
+    />
+
+    <app-highlights-section [items]="config.highlights" />
+  </main>
+
+  <app-footer
+    [businessName]="config.business.name"
+    [address]="config.business.address"
+    [phone]="config.business.phone"
+    [email]="config.business.email"
+    [openingHours]="config.business.openingHours"
+    [currentYear]="currentYear"
+  />
+</div>

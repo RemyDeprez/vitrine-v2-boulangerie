@@ -1,0 +1,12 @@
+<header class="topbar">
+  <a class="brand" href="#accueil" aria-label="Retour a l'accueil">
+    <img [src]="logo" [alt]="logoAlt" class="brand__logo" />
+    <span class="brand__text">{{ businessName }}</span>
+  </a>
+
+  <nav class="menu" aria-label="Navigation principale">
+    @for (item of navigation; track item.anchor) {
+      <a [href]="item.anchor">{{ item.label }}</a>
+    }
+  </nav>
+</header>

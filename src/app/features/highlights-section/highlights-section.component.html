@@ -1,0 +1,8 @@
+<section id="services" class="highlights" aria-label="Services boulangerie">
+  @for (item of items; track item.title) {
+    <article class="highlight-card">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+    </article>
+  }
+</section>

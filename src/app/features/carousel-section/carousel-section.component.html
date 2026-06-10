@@ -1,0 +1,15 @@
+<section id="galerie" class="carousel" aria-labelledby="carousel-title">
+  <div class="section-title">
+    <h2 id="carousel-title">Nos creations du jour</h2>
+    <p>Change facilement les visuels dans la configuration centralisee.</p>
+  </div>
+
+  <div class="carousel__track" role="list">
+    @for (photo of photos; track photo.src) {
+      <article class="carousel__item" role="listitem">
+        <img [src]="photo.src" [alt]="photo.alt" loading="lazy" />
+        <p>{{ photo.caption }}</p>
+      </article>
+    }
+  </div>
+</section>

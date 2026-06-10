@@ -1,0 +1,35 @@
+.who-are-we {
+  margin-top: 2.4rem;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) 1.1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.who-are-we__media img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+}
+
+.who-are-we__content {
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: clamp(1rem, 2.2vw, 1.8rem);
+  background: color-mix(in srgb, var(--brand-secondary) 16%, white);
+}
+
+h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+@media (max-width: 900px) {
+  .who-are-we {
+    grid-template-columns: 1fr;
+  }
+}

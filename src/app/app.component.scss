@@ -1,0 +1,21 @@
+:host {
+	display: block;
+}
+
+.site {
+	--ink: #25160b;
+	--paper: #fff9ef;
+	--panel: #fff2dd;
+	--line: color-mix(in srgb, var(--brand-primary) 32%, #ffffff);
+
+	min-height: 100dvh;
+	color: var(--ink);
+	background:
+		radial-gradient(circle at 8% 10%, color-mix(in srgb, var(--brand-secondary) 16%, transparent), transparent 35%),
+		radial-gradient(circle at 92% 0%, color-mix(in srgb, var(--brand-primary) 15%, transparent), transparent 32%),
+		var(--paper);
+}
+
+main {
+	padding: 0 clamp(1rem, 3vw, 3rem) 3rem;
+}
