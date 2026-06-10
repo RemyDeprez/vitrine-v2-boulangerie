@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Maison Dorat">
+  <defs>
+    <linearGradient id="crumb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3c57a" />
+      <stop offset="1" stop-color="#9f4f1f" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#fff5e7" />
+  <path d="M12 40c0-10 9-18 20-18s20 8 20 18" fill="none" stroke="url(#crumb)" stroke-width="7" stroke-linecap="round" />
+  <path d="M22 30c0-6 4-10 10-10" fill="none" stroke="#9f4f1f" stroke-width="4" stroke-linecap="round" />
+  <path d="M32 20c6 0 10 4 10 10" fill="none" stroke="#9f4f1f" stroke-width="4" stroke-linecap="round" />
+</svg>
